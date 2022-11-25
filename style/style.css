@@ -1,0 +1,551 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 1px;
+  background: #ede2f3;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 5fr;
+      grid-template-columns: 2fr 5fr;
+  height: 100vh;
+  background: #fff;
+}
+
+main .first {
+  background: url("../images/bg-main-desktop.png") center center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .first .cards {
+  width: 100%;
+  color: #fff;
+}
+
+main .first .cards .card {
+  padding: 10px;
+  border-radius: 10px;
+  height: 12em;
+  -webkit-box-shadow: rgba(73, 66, 66, 0.2) 5px 20px 30px 8px;
+          box-shadow: rgba(73, 66, 66, 0.2) 5px 20px 30px 8px;
+}
+
+main .first .cards .front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  left: 30%;
+  margin-bottom: 30px;
+  padding: 20px 25px;
+  background: url(../images/bg-card-front.png) center center no-repeat;
+  background-size: cover;
+}
+
+main .first .cards .front .logo {
+  height: 35px;
+}
+
+main .first .cards .front .logo img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main .first .cards .front .info .number {
+  font-size: 1.42em;
+  word-spacing: 5px;
+  margin-bottom: 18px;
+}
+
+main .first .cards .front .info .last-info {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .first .cards .back {
+  background: url(../images/bg-card-back.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 50%;
+}
+
+main .first .cards .back .cvv {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 30px;
+  font-size: 0.8em;
+}
+
+main .second {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .second form {
+  width: 35%;
+}
+
+main .second form label {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  margin-bottom: 5px;
+}
+
+main .second form input {
+  border-radius: 5px;
+  padding: 7px 10px;
+  border: 1px solid #dedddf;
+  font-size: 0.85em;
+}
+
+main .second form input::-webkit-input-placeholder {
+  color: #8e8593;
+}
+
+main .second form input:-ms-input-placeholder {
+  color: #8e8593;
+}
+
+main .second form input::-ms-input-placeholder {
+  color: #8e8593;
+}
+
+main .second form input::placeholder {
+  color: #8e8593;
+}
+
+main .second form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 20px;
+}
+
+main .second form .field.bottom {
+  padding-bottom: 12px;
+}
+
+main .second form .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+main .second form .more .expiry input {
+  width: 4.5em;
+  margin-right: 4px;
+}
+
+main .second form .more .cvv input {
+  width: 10.5em;
+}
+
+main .second form button {
+  background: #21092f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+main .second form button:hover {
+  cursor: pointer;
+}
+
+main .second .show {
+  display: none;
+}
+
+@media screen and (max-width: 1272px) {
+  main .second form {
+    width: 38%;
+  }
+}
+
+main .second .thank-you {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .second .thank-you .img {
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+main .second .thank-you .img img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main .second .thank-you .bg {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+main .second .thank-you .subtitle {
+  font-size: 0.8em;
+  color: #8e8593;
+  margin-bottom: 30px;
+}
+
+main .second .thank-you button {
+  background: #21092f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 7em;
+  font-size: 16px;
+}
+
+main .second .thank-you button:hover {
+  cursor: pointer;
+}
+
+main .second .thank-you.show {
+  display: none;
+}
+
+@media screen and (min-width: 1500px) {
+  main {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  main {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  main {
+    width: 65%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  main .first .cards .card {
+    height: 13.5em;
+  }
+}
+
+@media screen and (max-width: 1176px) {
+  main {
+    -ms-grid-columns: 2.5fr 5.5fr;
+        grid-template-columns: 2.5fr 5.5fr;
+  }
+  main .second form {
+    width: 55%;
+    padding-left: 5em;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  main {
+    -ms-grid-columns: 3fr 6fr;
+        grid-template-columns: 3fr 6fr;
+  }
+  main .second form {
+    width: 65%;
+    padding-left: 6em;
+  }
+}
+
+@media screen and (max-width: 1008px) {
+  main {
+    -ms-grid-columns: 3fr 5.5fr;
+        grid-template-columns: 3fr 5.5fr;
+  }
+  main .first .cards .front {
+    left: 20%;
+  }
+  main .first .cards .back {
+    left: 40%;
+  }
+  main .second form {
+    width: 75%;
+    padding-left: 7em;
+  }
+}
+
+@media screen and (max-width: 952px) {
+  main {
+    -ms-grid-columns: 3fr 5.5fr;
+        grid-template-columns: 3fr 5.5fr;
+  }
+  main .first .cards .card {
+    height: 12em;
+  }
+  main .first .cards .front .info .number {
+    font-size: 1.35em;
+    word-spacing: 3px;
+  }
+  main .second form {
+    width: 70%;
+    padding-left: 7em;
+  }
+  main .second form .more .expiry input {
+    width: 3.5em;
+  }
+  main .second form .more .cvv input {
+    width: 10em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background: #fff;
+  }
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: auto;
+  }
+  main .first {
+    background: url("../images/bg-main-mobile.png") center center no-repeat;
+    background-size: cover;
+    height: 40vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .first .cards {
+    width: 45%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+    top: 30px;
+  }
+  main .first .cards .card {
+    height: 12em;
+  }
+  main .first .cards .front {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    z-index: 20;
+    top: -13vh;
+    position: relative;
+    left: -10%;
+  }
+  main .first .cards .back {
+    position: relative;
+    left: 10%;
+  }
+  main .second {
+    margin-top: 75px;
+    z-index: 5;
+  }
+  main .second form {
+    width: 40%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  main {
+    grid-gap: 0px;
+  }
+  main .first .cards {
+    width: 55%;
+  }
+  main .second form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  main .first .cards {
+    width: 55%;
+  }
+  main .first .cards .card {
+    height: 10.4em;
+  }
+  main .first .cards .front {
+    top: -8vh;
+  }
+  main .first .cards .front .info .number {
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    font-size: 1.1em;
+  }
+  main .second {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .second form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  main .first .cards {
+    width: 70%;
+  }
+  main .first .cards .card {
+    height: 9.7em;
+  }
+  main .second form {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
