@@ -27,7 +27,7 @@ main {
       .card {
         padding: 10px;
         border-radius: 10px;
-        height: 12em;
+        height: 13em;
         box-shadow: rgba($color: #494242, $alpha: 0.2) 5px 20px 30px 8px;
       }
 
@@ -97,7 +97,7 @@ main {
 
       label {
         text-transform: uppercase;
-        font-size: 0.6em;
+        font-size: 0.7em;
         margin-bottom: 5px;
       }
 
@@ -115,7 +115,7 @@ main {
       .field {
         display: flex;
         flex-direction: column;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
       }
 
       .field.bottom {
@@ -126,16 +126,19 @@ main {
         display: flex;
         justify-content: space-between;
         margin-bottom: 35px;
+        margin-top: 5px;
 
         .expiry {
           input {
             width: 4.5em;
             margin-right: 4px;
+            margin-top: 3px;
           }
         }
 
         .cvv {
           input {
+            margin-top: 3px;
             width: 10.5em;
           }
         }

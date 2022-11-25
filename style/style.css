@@ -114,7 +114,7 @@ main .first .cards {
 main .first .cards .card {
   padding: 10px;
   border-radius: 10px;
-  height: 12em;
+  height: 13em;
   -webkit-box-shadow: rgba(73, 66, 66, 0.2) 5px 20px 30px 8px;
           box-shadow: rgba(73, 66, 66, 0.2) 5px 20px 30px 8px;
 }
@@ -210,7 +210,7 @@ main .second form {
 
 main .second form label {
   text-transform: uppercase;
-  font-size: 0.6em;
+  font-size: 0.7em;
   margin-bottom: 5px;
 }
 
@@ -245,7 +245,7 @@ main .second form .field {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 main .second form .field.bottom {
@@ -260,14 +260,17 @@ main .second form .more {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 35px;
+  margin-top: 5px;
 }
 
 main .second form .more .expiry input {
   width: 4.5em;
   margin-right: 4px;
+  margin-top: 3px;
 }
 
 main .second form .more .cvv input {
+  margin-top: 3px;
   width: 10.5em;
 }
 
