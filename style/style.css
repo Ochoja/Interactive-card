@@ -518,7 +518,7 @@ main .second .thank-you.show {
 
 @media screen and (max-width: 577px) {
   main .first .cards {
-    width: 55%;
+    width: 60%;
   }
   main .first .cards .card {
     height: 10.4em;
@@ -538,12 +538,13 @@ main .second .thank-you.show {
   }
   main .second form {
     width: 70%;
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 469px) {
   main .first .cards {
-    width: 70%;
+    width: 75%;
   }
   main .first .cards .card {
     height: 9.7em;
